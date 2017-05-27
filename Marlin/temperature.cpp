@@ -506,6 +506,7 @@ void Temperature::_temp_error(int e, const char* serial_msg, const char* lcd_msg
 }
 
 void Temperature::max_temp_error(int8_t e) {
+  /*
   #if HAS_TEMP_BED
     _temp_error(e, PSTR(MSG_T_MAXTEMP), e >= 0 ? PSTR(MSG_ERR_MAXTEMP) : PSTR(MSG_ERR_MAXTEMP_BED));
   #else
@@ -514,8 +515,10 @@ void Temperature::max_temp_error(int8_t e) {
       UNUSED(e);
     #endif
   #endif
+  */
 }
 void Temperature::min_temp_error(int8_t e) {
+  /*
   #if HAS_TEMP_BED
     _temp_error(e, PSTR(MSG_T_MINTEMP), e >= 0 ? PSTR(MSG_ERR_MINTEMP) : PSTR(MSG_ERR_MINTEMP_BED));
   #else
@@ -524,6 +527,7 @@ void Temperature::min_temp_error(int8_t e) {
       UNUSED(e);
     #endif
   #endif
+  */
 }
 
 float Temperature::get_pid_output(int e) {
