@@ -8724,12 +8724,12 @@ void ok_to_send() {
     #if ENABLED(min_software_endstops)
       NOLESS(target[X_AXIS], soft_endstop_min[X_AXIS]);
       NOLESS(target[Y_AXIS], soft_endstop_min[Y_AXIS]);
-      NOLESS(target[Z_AXIS], soft_endstop_min[Z_AXIS]);
+     // NOLESS(target[Z_AXIS], soft_endstop_min[Z_AXIS]);
     #endif
     #if ENABLED(max_software_endstops)
       NOMORE(target[X_AXIS], soft_endstop_max[X_AXIS]);
       NOMORE(target[Y_AXIS], soft_endstop_max[Y_AXIS]);
-      NOMORE(target[Z_AXIS], soft_endstop_max[Z_AXIS]);
+     // NOMORE(target[Z_AXIS], soft_endstop_max[Z_AXIS]);
     #endif
   }
 
