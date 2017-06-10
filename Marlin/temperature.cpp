@@ -487,6 +487,7 @@ int Temperature::getHeaterPower(int heater) {
 // Temperature Error Handlers
 //
 void Temperature::_temp_error(int e, const char* serial_msg, const char* lcd_msg) {
+	/*
   static bool killed = false;
   if (IsRunning()) {
     SERIAL_ERROR_START;
@@ -503,6 +504,7 @@ void Temperature::_temp_error(int e, const char* serial_msg, const char* lcd_msg
     else
       disable_all_heaters(); // paranoia
   #endif
+  */
 }
 
 void Temperature::max_temp_error(int8_t e) {
